@@ -14,7 +14,7 @@ function [  ] = msplot( mnp, x, y, xstr, ystr )
 % Date  : 2020/12/1
 %%
 % 完全按照书上copy
-% 如果时第一幅小图，则新建一个figure
+% 如果是第一幅小图，则新建一个figure
 % subplot(mnp) = subplot(m, n, p),mnp必须为三位数
 if mod(mnp, 10) == 1
     figure;

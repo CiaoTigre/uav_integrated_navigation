@@ -4,17 +4,18 @@ function [ wm, vm ] = imuadderr( wm, vm, eb, web, db, wdb, ts )
 % 程序@ 捷联惯导算法与组合导航原理 P235
 %
 % Inputs:
-%       wm: n×3 矩阵，每一行对应一个角增量：[theta_x, theta_y, theta_z] rad
-%       vm: n×3 矩阵，每一行对应一个速度增量 m/s
-%       注意！wm和vm如果由四列，最后一列是对应的时间
-%       eb: 陀螺仪常值漂移，即陀螺零偏
-%       web:角度随机游走误差
-%       db: 加速度计常值偏置
-%       wdb: 速度随机游走误差
-%       ts: 步长 s
+%       wm:     n×3 矩阵，每一行对应一个角增量：[theta_x, theta_y, theta_z] rad
+%       vm:     n×3 矩阵，每一行对应一个速度增量 m/s
+%               注意！wm和vm如果由四列，最后一列是对应的时间
+
+%       eb:     陀螺仪常值漂移，即陀螺零偏
+%       web:    角度随机游走误差
+%       db:     加速度计常值偏置
+%       wdb:    速度随机游走误差
+%       ts:     步长 s
 % Outputs:
-%       wm: 添加了误差的角增量
-%       vm: 添加了误差的速度增量
+%       wm:     添加了误差的角增量
+%       vm:     添加了误差的速度增量
 
 % Author: Kun Gan, Tongji University
 % Email : ciaotigre@126.com

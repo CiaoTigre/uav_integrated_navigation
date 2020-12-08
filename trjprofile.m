@@ -6,8 +6,8 @@ function [ att, vn, pos ] = trjprofile( att0, vn0, pos0, wat, ts )
 %       att0:       initial attitude,  [3×1]
 %        vn0:       initial velocitty, [3×1]
 %       pos0:       initial position,  [3×1]
-%       wat(1:3):   pitch velocity, roll velocity, yaw velocity
-%       wat(4):     forward velocity  (默认攻角和侧滑角为0)
+%       wat(1:3):   pitch, roll and yaw angular velocity
+%       wat(4):     forward speed(accl.)  (默认攻角和侧滑角为0)
 %       wat(5):     duration
 %       ts:         步长 s
 %
